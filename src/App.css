@@ -1,10 +1,34 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  @apply bg-gradient-to-b from-blue-400 to-blue-600 pb-16;
+}
+.kv{
+  width: 100vw;
+  height: 45vh;
+  background-image: url(/public/img/delmin.png);
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position-x: 60%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.kv:after{
+  content: '';
+  width: 100vw;
+  height: 30px;
+  position: relative;
+  display: block;
+  top: 97%;
+  backdrop-filter: blur(3px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App header{
+  @apply py-2.5 px-4 text-xl font-bold flex justify-between items-center text-white;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 100;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +38,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  @apply bg-pink-200;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +46,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
