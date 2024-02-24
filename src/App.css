@@ -24,11 +24,17 @@
 }
 
 .App header{
-  @apply py-2.5 px-4 text-xl font-bold flex justify-between items-center text-white;
+  @apply py-2.5 px-4 text-xl font-bold flex justify-center items-center text-white;
   position: sticky;
   top: 0;
   backdrop-filter: blur(10px);
   z-index: 100;
+}
+.App header a{
+  width: 32px;
+  position: absolute;
+  left: 0;
+  @apply ml-4;
 }
 
 @media (prefers-reduced-motion: no-preference) {

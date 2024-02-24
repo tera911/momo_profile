@@ -1,7 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCaretLeft} from "@fortawesome/free-solid-svg-icons";
-import {faCaretRight} from "@fortawesome/free-solid-svg-icons";
 import gif from './img/show-by-rock-anime.gif';
 import round1 from './img/cranky-anime.gif';
 import round2 from './img/sb69-delmin.gif';
@@ -15,9 +14,8 @@ function App() {
   return (
     <div className="App">
       <header>
-      <FontAwesomeIcon style={iconStyle} icon={faCaretLeft} />
+      <a href="../"><FontAwesomeIcon style={iconStyle} icon={faCaretLeft} /></a>
         デルミン
-        <FontAwesomeIcon style={iconStyle} icon={faCaretRight} />
       </header>
       <div className="kv"></div>
       <h2 className='text-3xl font-bold text-pink-400 my-8'>デビルミント鬼龍</h2>
