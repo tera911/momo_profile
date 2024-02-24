@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header>
-      <a href="../"><FontAwesomeIcon style={iconStyle} icon={faCaretLeft} /></a>
+      <a href="/"><FontAwesomeIcon style={iconStyle} icon={faCaretLeft} /></a>
         デルミン
       </header>
       <div className="kv"></div>
